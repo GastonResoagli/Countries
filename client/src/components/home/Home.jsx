@@ -20,6 +20,7 @@ export default function Home (){
     let [countriesPerPage, setCountriesPerPage] = useState(12)
     
 
+
     const indexOfLastCountrie = currentPage * countriesPerPage
     const indexOfFirstCountrie = indexOfLastCountrie - countriesPerPage
     const currentCountries = allCountries.slice(indexOfFirstCountrie,indexOfLastCountrie)
@@ -100,7 +101,7 @@ export default function Home (){
             <div>
                 Busca por Actividad
                 {(activities.length === 0)? <p>No se han creado actividades</p> :
-                <select className={""} onChange={e => handleFilterByAct(e)}>
+                <select className={Style.select} onChange={e => handleFilterByAct(e)}>
                 <option value="none"></option>
                 {activities.map(e => (
                 <option value={e.name} key={e.id}>{e.name}</option>

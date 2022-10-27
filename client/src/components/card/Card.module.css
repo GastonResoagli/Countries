@@ -1,5 +1,5 @@
 .h3{
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     font-size: x-large;
     text-align: center;
@@ -10,7 +10,7 @@
 }
 
 .h5 {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 15px;
 }
@@ -25,7 +25,7 @@
 
 .card{
     border-radius: 3%;
-    background-color: rgba(255, 255, 255, 0.443);
+    background-color: rgba(2, 2, 2, 0.443);
     height: 250px;
     width: 270px;
     display: flex;

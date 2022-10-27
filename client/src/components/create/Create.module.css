@@ -16,7 +16,7 @@ html, body {
 }
 
 .bar {
-    background-color: #FDC500;
+    background-color: #000000ea;
     align-items: center;
     justify-content: center;
     height: 120px;
@@ -26,7 +26,7 @@ html, body {
 }
 
 .bothome {
-    height: 115px;
+    height: 165px;
         
 }
 
@@ -38,7 +38,7 @@ html, body {
 .contenedorform {
     border-radius: 3%;
     margin: 40px;
-    background-color: rgba(239, 236, 216, 0.69);
+    background-color: rgba(0, 0, 0, 0.69);
     min-height: 400px;
     width: fit-content;
     justify-content: center;
@@ -49,12 +49,12 @@ html, body {
 }
 
 .titulof {
-    color: rgb(58, 76, 90);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 .campos {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     text-align: right;
     font-size: large;
     margin: 5px;
@@ -73,23 +73,24 @@ html, body {
 }
 
 .botsub {
-    font-weight: bold;
-    font-size: x-small;
-    padding: 4px;
-    margin: 20px;
-    font-family:'Verdana';
-    background-color: antiquewhite;
-    border-color: #07648f;
-    color: #07648f;
-    border-radius: 5px;
+        padding: 12px 25px;
+        border-radius: 50px;
+        background-color: #0088c4;
+        border: none;
+        cursor: pointer;
+        font-family: 'Arvo', serif;
+        font-weight: 700;
+        font-size:medium;
+        transition: all 0.3s ease 0s;
+        color: white;
+        margin: 25px;
+    }
+    .botsub:hover{
+        background-color: #07648f;
+        border-color: goldenrod;
+        color: antiquewhite;
+    }
 
-}
-
-.botsub:hover {
-    background-color: #FFCC33;
-    border-color: rgb(235, 174, 19);
-    color: rgb(131, 89, 33);
-}
 
 .conpais{
     display:inline-flex;

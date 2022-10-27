@@ -1,13 +1,14 @@
 .nav{
-    background-color: #FDC500;
+    background-color: #000000da;
     align-items: center;
-    height: 100px;
+    height: 90px;
     width: 100%;
     display: inline-flex;
     justify-content: center;
     align-content: center;
             
 }
+
 
 .bothome {
     height: 130px;
@@ -19,14 +20,16 @@
 }
 
 .botact {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #FFCC33;
-    border-color: rgb(235, 174, 19);
-    color: rgb(131, 89, 33);
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: #0088c4;
+    border: none;
+    cursor: pointer;
     font-family: 'Arvo', serif;
     font-weight: 700;
     font-size:medium;
+    transition: all 0.3s ease 0s;
+    color: white
     
 }
 .botact:hover{
@@ -61,7 +64,7 @@
 }
 
 .searchTitle {
-    color: #000;
+    color: rgb(255, 255, 255);
     font-family: 'Arvo', serif;
     font-weight: bolder;
     font-size: large;

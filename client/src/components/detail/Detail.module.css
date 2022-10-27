@@ -4,7 +4,12 @@ html, body {
 }
 
 .detail{
-    color: rgb(58, 76, 90);
+    color: rgb(255, 255, 255);
+    margin: 4px;
+}
+
+.p{
+     color: rgb(255, 255, 255);
     margin: 4px;
 }
 
@@ -24,7 +29,7 @@ html, body {
 .card{
     border-radius: 3%;
     margin: 40px;
-    background-color: rgba(248, 248, 248, 0.471);
+    background-color: rgba(0, 0, 0, 0.471);
     min-height: 500px;
     width:fit-content;
     justify-content: center;
@@ -35,7 +40,7 @@ html, body {
 }
 
 .titulo {
-    color: rgb(58, 76, 90);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -53,7 +58,7 @@ html, body {
     margin-left: 70px;
     border-radius: 3%;
     margin: 40px;
-    background-color: rgba(255, 255, 255, 0.362);
+    background-color: rgba(255, 255, 255, 0.444);
     position: relative;
     left: 50px;
     
@@ -61,7 +66,7 @@ html, body {
 
 
 .h4 {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     font-size:xx-large;
     text-align: center;
@@ -70,35 +75,35 @@ html, body {
 }
 
 .continente {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: large;
     margin-bottom: -15px;
 }
 
 .nombre {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     margin-bottom: 8px;
 }
 
 .codigo {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     text-align: center;
     
 }
 
 .nav {
-    background-color: #FDC500;
+    background-color: #0c0c0c;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    height: 110px;
     width: 100%;
     display: inline-flex;
        
 }
 
 .bothome {
-    height: 115px;
+    height: 155px;
         
 }
 
@@ -107,23 +112,24 @@ html, body {
     opacity: 90%;
 }
 
+
 .botactd {
-    font-weight: bold;
-    font-size: x-small;
-    padding: 4px;
-    margin: 20px;
-    font-family:'Verdana';
-    background-color: antiquewhite;
-    border-color: #07648f;
-    color: #07648f;
-    border-radius: 5px;
-
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: #0088c4;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    font-size:medium;
+    transition: all 0.3s ease 0s;
+    color: white;
+    margin: 10px;
 }
-
-.botactd:hover {
-    background-color: #FFCC33;
-    border-color: rgb(235, 174, 19);
-    color: rgb(131, 89, 33);
+.botactd:hover{
+    background-color: #07648f;
+    border-color: goldenrod;
+    color: antiquewhite;
 }
 
 .conpais {

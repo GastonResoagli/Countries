@@ -35,7 +35,7 @@ return (
     </div>
     <div className={Style.contsearch}>
     <div className={Style.search}>
-        <div className={Style.searchTitle}>Encuentra Tu Próximo Destino</div>    
+        <div className={Style.searchTitle}>Encuentra Tu Destino</div>    
            <input className={Style.searchcountri} value={name} type = "text" placeholder = "Qué país deseas visitar..."
             onChange = {(e) => {setName(e.target.value); handleInputChange(e.target.value)}} />
            </div>

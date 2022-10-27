@@ -18,7 +18,6 @@ export default function CountryDetail(props) {
     function handleClick(e){
         e.preventDefault();
         history.push("/home")
-        
     }
 
     return (
@@ -63,7 +62,7 @@ export default function CountryDetail(props) {
                         
                     ) 
                  }) 
-                 : <p>No existen actividades en este país</p> 
+                 : <p className={Style.p}>No existen actividades en este país</p> 
             }
              <Link to="/activities"><button className={Style.botactd}>Crear Actividad</button></Link>               
             </div>
