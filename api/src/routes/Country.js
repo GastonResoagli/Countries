@@ -6,6 +6,7 @@ const e = require('express');
 const router = Router();
 
 
+
 //trae los paises de la API
 const getApiInfo = async () => {
     const response = await axios.get("https://restcountries.com/v3/all")
@@ -100,7 +101,7 @@ router.get('/countries/:idPais', async (req, res) => {
             }, 
             include: [{ 
                 model: Activity,
-                attributes: [ 'name', 'difficulty', 'duration', 'season',],
+                attributes: [ 'name', 'difficulty', 'duration', 'season' ,],
                 through: { attributes: [] }
             }] 
           })

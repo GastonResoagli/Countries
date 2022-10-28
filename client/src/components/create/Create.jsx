@@ -13,7 +13,7 @@ function validate(input){
 
     if(!input.name) errors.name = "Campo Necesario"
     else if (/[^A-Za-z0-9 ]+/g.test(input.name)) errors.name = 'Nombre no puede tener caracteres especiales o tildes'
-        
+
     if(!input.difficulty) errors.difficulty = "Campo Necesario"
     else if (dif <= 0 || dif > 5) errors.difficulty = "Debe ser entre 1 y 5"
     
@@ -39,7 +39,6 @@ export default function CreateActivity(){
        duration:"",
        season:"",
        countries:[]
-
     })
 
     useEffect (() => {
@@ -120,11 +119,13 @@ export default function CreateActivity(){
             <form onSubmit={(e)=> handleSubmit(e)}>
                 <div>
                     <label className={Style.campos}>Nombre: </label>
+                    <br/>
                     <input className={Style.inputs} type="text" value= {input.name} name= "name" onChange={(e)=> handleChange(e)}/>
                     {errors.name && (<p className={Style.errors}>{errors.name}</p>)}
                 </div>
                 <div>
                     <label className={Style.campos}>Escoja el país para su actividad: </label>
+                    <br/>
                     <select className={Style.inputs} name="countries" id="countries" onChange={(e) => handleSelect(e)}>
                             <option> </option>                      
                         {countries.map((con) => (
@@ -136,6 +137,7 @@ export default function CreateActivity(){
                 </div>
                 <div>
                     <label className={Style.campos}>Temporada: </label>
+                    <br/>
                     <select className={Style.inputs} name="season" id="season" onChange={(e) => handleSelect(e)}>
                     <option value="vacio"> </option>
                             <option value={"Verano"}>Verano </option>
@@ -147,13 +149,14 @@ export default function CreateActivity(){
                 </div>
                 <div>
                     <label className={Style.campos}>Dificultad: </label>
+                    <br/>
                     <input className={Style.inputs} type="number" value= {input.difficulty} name= "difficulty" onChange={(e)=> handleChange(e)}/>
                     {errors.difficulty && (<p className={Style.errors}>{errors.difficulty}</p>)}
                 </div>
                 <div>
-                    <label className={Style.campos}>Duración: </label>
+                    <label className={Style.campos}>Duración Hs: </label>
+                    <br/>
                     <input className={Style.inputs} type="number" value= {input.duration} name= "duration" onChange={(e)=> handleChange(e)}/>
-                    <label className={Style.campos}> horas</label>
                     {errors.duration && (<p className={Style.errors}>{errors.duration}</p>)}
                 </div>
                 <div>
@@ -165,7 +168,7 @@ export default function CreateActivity(){
                 {input.countries.map(e =>
                     <div className={Style.conpais}>
                         <p className={Style.mpais}> {e} </p>
-                        <button className={Style.botelim} onClick={()=> handleDelete(e)}>X </button>
+                        <button className={Style.botelim} onClick={()=> handleDelete(e)}>X</button>
                     </div>    
                     )}
                 </div>    

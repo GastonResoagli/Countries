@@ -4,7 +4,8 @@ html, body {
 }
 
 .conPrin {
-    background-color: #002637;
+    background-image: url('../Img/landing.jpg');
+    background-size:contain ;
     width: 100vmax;
     height: 100vmax;
     display: flex;
@@ -18,35 +19,22 @@ html, body {
       
 }
 
-.imgLanding {
-    height: 50%;
-    z-index: -1;
-}
-
-.welcome {
-    background-color: aqua;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
 
 .boton {
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgba(8, 90, 242, 0.915);
-    font-size: large;
-    font-style: normal;
-    border-color: cornflowerblue;
-    color: white; 
-    padding: 7px;
-    box-shadow: 6px;
-    
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    font-size:medium;
+    transition: all 0.3s ease 0s;
+    color: white;
     
 }
-
-.boton:hover {
-    background-color:gold ;
-    color: cornflowerblue;
-    font-weight: bolder;
-    font-size: larger;
+.boton:hover{
+    background-color: #07648f;
+    border-color: goldenrod;
+    color: antiquewhite;
 }

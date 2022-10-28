@@ -1,3 +1,5 @@
+// se podria hacer un import desde las action types, es una buena practica pero no decidi usarla 
+
 const initialState = {
     countries: [],
     allCountries: [],
@@ -5,6 +7,8 @@ const initialState = {
     activities: [],
     detail: {}
 };
+
+//funciones de reducer 
 
 function rootReducer (state = initialState, action){
     switch(action.type) {
@@ -97,14 +101,13 @@ function rootReducer (state = initialState, action){
 
             let array = [];
 
-            for (let i = 0; i < solo.length; i++) {
-            for (let j = 0; j < solo[i].Activities.length; j++) {
-             if (solo[i].Activities[j].name === action.payload) {
+            for (let i = 0; i < solo.length; i++) { //for para recorrer uno a uno cada elemento
+            for (let j = 0; j < solo[i].Activities.length; j++) { // dentro de cada elemento recorer las activities que recibe como [] 
+             if (solo[i].Activities[j].name === action.payload) { //si las encuentra pushea lo que encontro
                    array.push(solo[i]);
                  }
                 }
                 }
-
             const filtro = action.payload === "Todos" ? allCountries2 : array;
 
             return {
@@ -112,9 +115,9 @@ function rootReducer (state = initialState, action){
                  countries: filtro,
         }
         case "GET_COUNTRIES_BY_NAME":
-            console.log(action.payload)
+           
             let nombre = action.payload === "" ? state.allCountries : state.countries.filter((e) => e.name.toLowerCase().includes(action.payload.toLowerCase()))
-            console.log(action.payload)
+      
             return{
                 ...state,
                 countries: nombre

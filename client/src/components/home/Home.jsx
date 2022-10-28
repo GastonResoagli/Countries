@@ -14,10 +14,10 @@ export default function Home (){
     const allCountries = useSelector ((state) => state.countries)
     const activities = useSelector ((state) => state.allActivities)
 
-    const [orden, setOrden]= useState("")
+    const [, setOrden]= useState("")
 
     const [currentPage, setCurrentPage] = useState(1)
-    let [countriesPerPage, setCountriesPerPage] = useState(12)
+    let [countriesPerPage, ] = useState(12)
     
 
 
@@ -70,7 +70,7 @@ export default function Home (){
             
             <div className={Style.filter}>
             <div>
-                Orden Alfabético    
+               <p className={Style.p}>Alphabetical</p>   
             <select className={Style.select} onChange={e => handleSort(e)}>
                 <option></option>
                 <option value="asc">Ascendente</option>
@@ -78,7 +78,7 @@ export default function Home (){
             </select>
             </div>
             <div>
-                Número de Habitantes
+               <p className={Style.p}>People</p>
             <select className={Style.select} onChange={e => handleSortPop(e)}>
                 <option></option>
                 <option value="mayp">Menor a Mayor</option>
@@ -86,7 +86,7 @@ export default function Home (){
             </select>
             </div>
             <div>
-                Busca por Continentes
+               <p className={Style.p}> Continent </p> 
             <select className={Style.select} onChange={e => handleFilteredCountrie(e)}>
                 <option value={"All"}> </option>
                 <option value={"South America"}>Sudamérica</option>
@@ -99,8 +99,8 @@ export default function Home (){
             </select>
             </div>
             <div>
-                Busca por Actividad
-                {(activities.length === 0)? <p>No se han creado actividades</p> :
+                <p className={Style.p}>Activities</p>
+                {(activities.length === 0)? <p className={Style.p} >No Activities Found</p> :
                 <select className={Style.select} onChange={e => handleFilterByAct(e)}>
                 <option value="none"></option>
                 {activities.map(e => (

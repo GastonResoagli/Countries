@@ -31,7 +31,7 @@ export default function CountryDetail(props) {
             <div className={Style.card}>
 
                 <div className={Style.conpais}>
-                <h2 className={Style.titulo}>Detalles del País</h2>
+                <h2 className={Style.titulo}>Country Details</h2>
             {
                 country ?
                 <div >
@@ -48,23 +48,25 @@ export default function CountryDetail(props) {
                 </div>
 
             <div className={Style.conact}>
-            <h3 className={Style.titulo}>Actividades del País</h3>
+            <h3 className={Style.titulo}>Country Activities</h3>
             {
                 country.Activities&&country.Activities.length ? 
             country.Activities.map(e => {
                 return (
                         <div>
                             <h4 className={Style.h4}>{e.name}</h4>
+                            <br/>
                             <p className={Style.detail}>Dificultad: {e.difficulty}</p>
                             <p className={Style.detail}>Duración: {e.duration} horas</p>
                             <p className={Style.detail}>Temporada: {e.season}</p>
+                            <p className={Style.detail}>Rating: {e.rating}</p>
                         </div>
                         
                     ) 
                  }) 
-                 : <p className={Style.p}>No existen actividades en este país</p> 
+                 : <p className={Style.p}>There are no activities in this country</p> 
             }
-             <Link to="/activities"><button className={Style.botactd}>Crear Actividad</button></Link>               
+             <Link to="/activities"><button className={Style.botactd}>Create Activity</button></Link>               
             </div>
             </div>
         </div>

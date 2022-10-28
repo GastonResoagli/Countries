@@ -35,13 +35,13 @@ return (
     </div>
     <div className={Style.contsearch}>
     <div className={Style.search}>
-        <div className={Style.searchTitle}>Encuentra Tu Destino</div>    
-           <input className={Style.searchcountri} value={name} type = "text" placeholder = "Qué país deseas visitar..."
+        <div className={Style.searchTitle}>Find Your Destiny</div>    
+           <input className={Style.searchcountri} value={name} type="search" id="site-search" placeholder = "Search Your Country..."
             onChange = {(e) => {setName(e.target.value); handleInputChange(e.target.value)}} />
            </div>
     </div>
         <div className={Style.contAct}>    
-        <Link to= "/activities"><button className={Style.botact}>Crear Actividad</button></Link>       
+        <Link to= "/activities"><button className={Style.botact}>Create Activity</button></Link>       
         </div>
     </div>
     

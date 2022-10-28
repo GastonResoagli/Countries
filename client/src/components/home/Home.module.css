@@ -23,7 +23,7 @@ html, body{
 
 
 .filter {
-    background-color: #000;
+    background-color: #000000da;
     border-color: black;
     border-radius: 5px;
     display: inline-flex;
@@ -52,4 +52,9 @@ html, body{
     justify-content: center;
     margin: 0px;
     padding: 2px;
+}
+
+.p{
+    color: white;
+    font-family: 'Arvo', serif;
 }

@@ -16,7 +16,7 @@ html, body {
 }
 
 .bar {
-    background-color: #000000ea;
+    background-color: #000000da;
     align-items: center;
     justify-content: center;
     height: 120px;
@@ -98,7 +98,7 @@ html, body {
 }
 
 .mpais {
-    color: rgb(9, 57, 154);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: large;
     margin: 5px;
@@ -106,13 +106,22 @@ html, body {
 }
 
 .botelim {
-    font-size: x-small;
-    font-weight: bold;
-    background-color: red;
-    border-radius: 100%;
-    border-width: 0ch;
-    height: fit-content;
-    width: fit-content;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: #fa0505f0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    font-size:medium;
+    transition: all 0.3s ease 0s;
+    color: white;
+    
+}
+.botelim:hover{
+    background-color: #07648f;
+    border-color: goldenrod;
+    color: antiquewhite;
 }
 
 .errors {

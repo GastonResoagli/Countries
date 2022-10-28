@@ -1,19 +1,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import style from "./Landing.module.css"
-import landing from "../Img/landing.png"
+
 
 export default function LandingPage(){
     return(
         <div className={style.conPrin}>
             <div className={style.homepage}>
-            <img className={style.imgLanding} src={landing} alt="Bienvenida" />
-            <div className={style.welcome}>
+                <h1> Welcome to my proyect</h1>
+                <br/>
             <Link to ="/home">
-                <button className={style.boton}>Ingresar</button>
+                <button className={style.boton}>Enter</button>
             </Link>
             </div>
             </div>
-        </div>
     )
 }
