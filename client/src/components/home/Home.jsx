@@ -80,7 +80,7 @@ export default function Home (){
             <div>
                <p className={Style.p}>People</p>
             <select className={Style.select} onChange={e => handleSortPop(e)}>
-                <option></option>
+                <option value={"All"}> </option>
                 <option value="mayp">Menor a Mayor</option>
                 <option value="menp">Mayor a Menor</option>
             </select>
